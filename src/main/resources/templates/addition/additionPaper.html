@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--브라우저 스타일 초기화-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+
+    <!--Google Fonts - 나눔고딕-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" href="/css/common.css" />
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <title>더하기 공부방</title>
+</head>
+<body>
+<header>
+    <div class="inner">
+        <!--<form id="levelForm" method="post">
+            몇자리수 더하기를 해볼까?
+            <select id="level_value">
+                <option th:each="num : ${#numbers.sequence(1,5)}" th:text="${num}" th:value="${num}">num</option>
+            </select>
+            <button type="button" id="level_check" class="btn" onclick="viewPaper()">확인</button>
+        </form>-->
+    </div>
+</header>
+<section class="contents">
+    <div class="inner">
+        <div class="subject-list">
+            <div class="subject-content">
+                <ul class="left">
+                    <li>5+5=<input type="text" ></li>
+                    <li>5+5=</li>
+                    <li>5+5=</li>
+                    <li>5+5=</li>
+                    <li>5+5=</li>
+                </ul>
+                <ul class="right">
+                    <li>5+5=</li>
+                    <li>5+5=</li>
+                    <li>5+5=</li>
+                    <li>5+5=</li>
+                    <li>5+5=</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="inner">
+        <div class="info">
+            <ul>
+                <li><span>EMAIL : kimseungjae@gmail.com</span></li>
+                <li><span>GITHUB : https://github.com/SeungjaeKim</span></li>
+            </ul>
+        </div>
+        <p class="copyright">
+            &copy; <span class="this-year"></span> Kimseungjae. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+</body>
+<!--<script type="text/javascript">
+    function viewPaper(){
+        $.ajax({
+            type: "POST",
+            url: "/rest/addition",
+            data: {},
+            dataType: "json",
+        })
+    }
+</script>-->
+
+
+</html>
